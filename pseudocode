@@ -1,0 +1,47 @@
+    <!--Add a huge heading with inspirational people at the top and each picture should
+        move to the next inspirational person of your choice.
+
+        Below it should have a navigation link with the links HOME-TRIVIA-ABOUT/ME.
+
+        The left section should have resources such as Prince Pa, Trent Shelton and that
+        british indian guy I cant remember his name. For inspirational references.
+
+        In the middle should be automatic movement of pictures of inspirational people.
+        this should move on it's on, so lok for a corousel and things of other links to
+        make this happen. 
+    
+    -->
+
+    
+    ____________________________________________________________
+    |      photo goes here                                     |
+    |                                                          |
+    ____________________________________________________________
+    |NAV1                     NAV2                          NAV3|
+
+                    _|_______________________________|_
+    | sidelink1      |                               |
+    | sidelink2      |COROUSEL                       |
+    | sidelink3      |  goes                         |
+    | sidelink4      |  here                         |
+    | sidelink5      |                               |
+                    _|_______________________________|_
+
+
+    |Instagram              COPYRIGHT                  BLABLABLA|    
+
+
+    use icons for the bottom, for example, use a clickable instagram icon that goes straight to your page
+    Think of some other things you can use as icons for the bottom footer. 
+
+    A really cool background photo  
+
+    link for Malala - https://en.wikipedia.org/wiki/Malala_Yousafzai 
+    Link for Jane Elliott - http://www.janeelliott.com/    
+    link for Trent Shelton - http://trentshelton.com/#intro
+     Trent photo from this site -   https://www.facebook.com/LikeTrentShelton/    
+         
+Look up Javascript code for answering questions and choosing
+between a series of answers. If they get it right, they should
+have a right pop up and if they get it wrong, they should have 
+the wrong pop up.
