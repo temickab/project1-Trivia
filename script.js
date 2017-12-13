@@ -1,5 +1,4 @@
 var score = 0
-var q1 = 'Who was the first president of the United States?'
 var questContainer = document.getElementsByClassName('ques')
 var button = document.getElementById('start')
 
@@ -27,9 +26,10 @@ function checkAnswers1() {
     if(questions[0] === answers[0]){
         score ++
         alert('YAY CORRECT')
-
+    } 
+    else{
+        alert('Wrong! Try Again!')
     }  
-    else('Wrong! Try Again!')   
 }
 
 function checkAnswers2(){
@@ -37,16 +37,19 @@ function checkAnswers2(){
         score++
         alert('YAY Correct Again')
     }
-    else('Wrong! Try Again!')    
+    else{
+        alert('Wrong! Try Again!')
+    }    
 }
 
 function checkAnswers3(){
     if(questions[2] === answers[2]){
         score++
         alert('Great Keep it Going')
-
     }
-    else('Wrong! Try Again!')  
+    else{ // correct way
+        alert('Wrong! Try Again!')
+    }  
 }
 
 function checkAnswers4() {
@@ -54,7 +57,9 @@ function checkAnswers4() {
         score++
         alert('Great one more question')
     }
-    else('Wrong! Try Again!') 
+    else{
+        alert('Wrong! Try Again!')
+    }  
 }
 
 function checkAnswers5() {
@@ -62,8 +67,19 @@ function checkAnswers5() {
         score++
         alert('Great Correct')
     }
-    else('Wrong! Try Again!') 
+    else{
+        alert('Wrong! Try Again!')
+    }  
 }
+
+var enterButtons = document.getElementsByClassName('button')
+
+enterButtons[0].addEventListener('click', checkAnswers1) // I did not practice DRY here 
+enterButtons[1].addEventListener('click', checkAnswers2) //Sorry
+enterButtons[2].addEventListener('click', checkAnswers3)
+enterButtons[3].addEventListener('click', checkAnswers4)
+enterButtons[4].addEventListener('click', checkAnswers5)
+
 
 
     for(var i = 0; i < questions.length; i++){
@@ -74,17 +90,7 @@ function checkAnswers5() {
         questContainer[i].appendChild(answer)
     }
 }
-    function results (){
-    if (score === 5) {
-        alert('Your final score is ' + score + 'Congrats!')
-        }
-        else if (score === 4) {
-            alert('Youre score is ' + score + ' At least you only missed one')
-        }
-        else if (score < 4) {
-            alert('Try again to try and get a perfect score!')
-        }
-    }
+    
 
 //command backslash
 // 
