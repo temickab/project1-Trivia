@@ -26,7 +26,7 @@ I also need to practice more because this is where I needed help the most
 # HTML
 
 * I created minimal HTML and utilized most of my time learning javascript with the help
-of another peer. I only creaded a Header, button and 5 divs.
+of another peer. I only created a header, button and 5 divs.
 
 # CSS
  * I used the body to set a background imaged which is fixed to the page
