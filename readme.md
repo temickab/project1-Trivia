@@ -29,7 +29,7 @@ I also need to practice more because this is where I needed help the most
 of another peer. I only created a header, button and 5 divs.
 
 # CSS
- * I used the body to set a background imaged which is fixed to the page
+ * I used the body to set a background image which is fixed to the page
  * I styled the buttons and the divs
 
 
