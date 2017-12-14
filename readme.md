@@ -3,7 +3,7 @@
 I did a simple  trivia quiz that consists of five questions where you have to 
 answer by typing into the input your answer. 
 
-#JavaScript
+# JavaScript
 
 
 * Created 3 global variables called
@@ -23,12 +23,12 @@ I also need to practice more because this is where I needed help the most
     2. Had many bugs and errors, found out I had to use input.value for each string.
     3. Created 5 event listeners to check through each function
 
-#HTML
+# HTML
 
 * I created minimal HTML and utilized most of my time learning javascript with the help
 of another peer. I only creaded a Header, button and 5 divs.
 
-#CSS
+# CSS
  * I used the body to set a background imaged which is fixed to the page
  * I styled the buttons and the divs
 
