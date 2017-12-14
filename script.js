@@ -17,13 +17,24 @@ function trivia () {
     var answers = [
         'George Washington',
         'China',
-        2007,
+        '2007',
         'DC/Maryland/Virginia',
         'Ada Lovelace'
     ]
 
+    for(var i = 0; i < questions.length; i++){
+        questContainer[i].innerHTML = questions[i]
+     var appending = document.createElement('input')
+        questContainer[i].appendChild(appending)
+        var answer = document.createElement('button')
+        answer.setAttribute('class','button')
+        questContainer[i].appendChild(answer)
+    }
+
+    var input = document.getElementsByTagName('input')
+
 function checkAnswers1() {
-    if(questions[0] === answers[0]){
+    if(input[0].value === answers[0]){
         score ++
         alert('YAY CORRECT')
     } 
@@ -33,7 +44,7 @@ function checkAnswers1() {
 }
 
 function checkAnswers2(){
-    if(questions[1] === answers[1]){
+    if(input[1].value === answers[1]){
         score++
         alert('YAY Correct Again')
     }
@@ -43,7 +54,7 @@ function checkAnswers2(){
 }
 
 function checkAnswers3(){
-    if(questions[2] === answers[2]){
+    if(input[2].value === answers[2]){
         score++
         alert('Great Keep it Going')
     }
@@ -53,7 +64,7 @@ function checkAnswers3(){
 }
 
 function checkAnswers4() {
-    if(questions[3] === answers[3]){
+    if(input[3].value === answers[3]){
         score++
         alert('Great one more question')
     }
@@ -63,7 +74,7 @@ function checkAnswers4() {
 }
 
 function checkAnswers5() {
-    if(questions[4] === answers[4]){
+    if(input[4].value === answers[4]){
         score++
         alert('Great Correct')
     }
@@ -72,23 +83,14 @@ function checkAnswers5() {
     }  
 }
 
-var enterButtons = document.getElementsByClassName('button')
+var enterButtons = document.querySelectorAll('.button')
 
 enterButtons[0].addEventListener('click', checkAnswers1) // I did not practice DRY here 
 enterButtons[1].addEventListener('click', checkAnswers2) //Sorry
 enterButtons[2].addEventListener('click', checkAnswers3)
 enterButtons[3].addEventListener('click', checkAnswers4)
 enterButtons[4].addEventListener('click', checkAnswers5)
-
-
-
-    for(var i = 0; i < questions.length; i++){
-        questContainer[i].innerHTML = questions[i]
-     var appending = document.createElement('input')
-        questContainer[i].appendChild(appending)
-        var answer = document.createElement('button')
-        questContainer[i].appendChild(answer)
-    }
+   
 }
     
 
