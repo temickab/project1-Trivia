@@ -1,0 +1,87 @@
+body{
+    background: url(blckbrd.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;  
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 150%;
+ } 
+ 
+ header{
+     background-size: 100%;
+     background-position: right 10px;
+     margin-top: 100px;
+     margin-left: 140px;
+     width: 500px;
+     height: 100px;
+     padding-right: 300px; 
+     /*position: fixed;*/
+ }
+
+ h2{
+     position: fixed;
+     float: right;
+ }
+ 
+ header h2{
+     padding-left: 660px;
+     padding-bottom: 25px;
+     color: #fff;
+ }
+ 
+ header nav ul{
+     position: fixed;
+ }
+ 
+ header section ul{
+     position: fixed;
+ }
+ header nav ul li{
+     list-style: none;
+     float: left;
+     color: rgb(110, 75, 75); 
+     border: none;
+     padding-bottom: 190px;
+     padding-left: 327px;
+    /* padding-left: 100px;
+     padding-right: 100px;
+     margin-top: 130px;
+     margin-bottom: 130px;*/
+ 
+ }
+
+ nav li{
+    word-spacing: 40px;
+    color: rgb(176, 158, 69);
+}
+
+nav li a{
+    color: #fff;
+}
+
+.list{
+    list-style: none;
+    color: #fff;
+}
+
+.quiz{
+    background-color: none;
+    margin-top: 200px;
+    overflow-y: scroll;
+    text-align: left;
+    
+}
+
+.quiz ul li{
+    font-size: 16px;
+    color: #fff;
+    list-style: none;
+}
+
+h3{
+    font-size: 18px;
+    color: rgb(219, 219, 196);
+}
+ 

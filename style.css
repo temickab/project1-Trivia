@@ -1,6 +1,7 @@
 body{
-  background: url(shirt.jpg) no-repeat center center fixed;
+  background: url(otherchalk.jpg) no-repeat center center fixed; 
   font-family: 'Bitter', serif;
+  /* photo from pixabay*/
 }
 
 
@@ -15,15 +16,34 @@ h1{
   text-align: center;
 }
 
-button{
+.button{
+  color: black;
+  background-color: rgb(228, 119, 139);
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  border-radius: 600%;
+  
+}
+
+.ques{
+  color: rgb(228, 119, 139);
+  text-align: right;
+  padding-bottom: 40px;
+  font-size: 30px;
+  
+}
+
+
+#start{
   color: black;
   background-color: rgb(228, 119, 139);
   font-size: 20px;
   height: 30px;
   width: 150px;
+  border-radius: 50%;
 
 }
-
 
 
 
@@ -36,7 +56,3 @@ button{
     }
   }
 
-  /*How to get my buttons to work for the quiz game, 
-  how to use Javascript and design and customize the prompt box.
-  How to stop the background photo from disappearing while
-  taking the quiz*/

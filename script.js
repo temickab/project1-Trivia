@@ -2,6 +2,7 @@ var score = 0
 var questContainer = document.getElementsByClassName('ques')
 var button = document.getElementById('start')
 
+
 button.addEventListener('click', trivia)
 
 
@@ -21,21 +22,23 @@ function trivia () {
         'DC/Maryland/Virginia',
         'Ada Lovelace'
     ]
+    
 
-    for(var i = 0; i < questions.length; i++){
+    for(var i = 0; i < questions.length; i++){ // looped through each question
         questContainer[i].innerHTML = questions[i]
      var appending = document.createElement('input')
         questContainer[i].appendChild(appending)
         var answer = document.createElement('button')
-        answer.setAttribute('class','button')
+        answer.setAttribute('class','button') // created a class of button
         questContainer[i].appendChild(answer)
+     
     }
 
     var input = document.getElementsByTagName('input')
 
 function checkAnswers1() {
-    if(input[0].value === answers[0]){
-        score ++
+    if(input[0].value === answers[0]){ //had to change from answers[0] to input.value
+        score ++                       // because it wasnt registering. 
         alert('YAY CORRECT')
     } 
     else{
