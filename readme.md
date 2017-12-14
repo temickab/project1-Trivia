@@ -1,17 +1,37 @@
 # Trivia
 
-I did a simple  trivia quiz that conducts of five questions where you have to 
+I did a simple  trivia quiz that consists of five questions where you have to 
 answer by typing into the input your answer. 
 
 #JavaScript
-* Used JS for a lot of HTML embedding
-    1. Created 4 divs in the HTML with the class of ques.
-    2. Did minimal hyper text markup 
-* I created a function with 2 variables that conists of arrays/strings that
-will embed into the web browser.
-* Created a for loop that will loop through each array
-* Created a function called checkAnswers 1,2 and 3. I had to use input/array plus the value
-to get it to work properly.
-* Added an EventListener to each checkAnswer function to make sure each one is clicked
-* The submit button is the pink button next to the input value.
+
+
+* Created 3 global variables called
+    1.  score - setting the score to 0
+    2. quesContainer - grabbed the class of ques from the mark up languange
+    3.  button - created an id of start in the html for the click here feature
+* Created a function called trivia which consists of  2 variables with arrays of strings.
+
+* Within the DOM I added an input to input the answers. 
+    1. Created a variable called appending
+    2. used the setAttribute to create a class of button
+    3. Appending the arrays in the container div to show up in the browser
+I also need to practice more because this is where I needed help the most
+
+* Created 5 functions called checkAnswers 1-5
+    1. Within each function, I created if/else statements
+    2. Had many bugs and errors, found out I had to use input.value for each string.
+    3. Created 5 event listeners to check through each function
+
+#HTML
+
+* I created minimal HTML and utilized most of my time learning javascript with the help
+of another peer. I only creaded a Header, button and 5 divs.
+
+#CSS
+ * I used the body to set a background imaged which is fixed to the page
+ * I styled the buttons and the divs
+
+
+
 

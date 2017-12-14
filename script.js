@@ -26,8 +26,8 @@ function trivia () {
 
     for(var i = 0; i < questions.length; i++){ // looped through each question
         questContainer[i].innerHTML = questions[i]
-     var appending = document.createElement('input')
-        questContainer[i].appendChild(appending)
+     var appending = document.createElement('input')// created an input to put in the text
+        questContainer[i].appendChild(appending)//appended the input
         var answer = document.createElement('button')
         answer.setAttribute('class','button') // created a class of button
         questContainer[i].appendChild(answer)
