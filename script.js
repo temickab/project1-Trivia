@@ -2,103 +2,92 @@ var score = 0
 var questContainer = document.getElementsByClassName('ques')
 var button = document.getElementById('start')
 
-
 button.addEventListener('click', trivia)
 
-
 function trivia () {
-    var questions = [
-        'Who was the first president of the United States?',
-        'What country has the largest population in the world?',
-        'What year did the first IPhone come out?',
-        'DMV which consists of 3 connected states (NOT DEPARTMENT OF MOTOR VEHICLES SILLY) stands for...',
-        'Who was the first computer programmer'
-    ]
+  var questions = [
+    'Who was the first president of the United States?',
+    'What country has the largest population in the world?',
+    'What year did the first IPhone come out?',
+    'DMV which consists of 3 connected states (NOT DEPARTMENT OF MOTOR VEHICLES SILLY) stands for...',
+    'Who was the first computer programmer'
+  ]
 
-    var answers = [
-        'George Washington',
-        'China',
-        '2007',
-        'DC/Maryland/Virginia',
-        'Ada Lovelace'
-    ]
-    
+  var answers = [
+    'George Washington',
+    'China',
+    '2007',
+    'DC/Maryland/Virginia',
+    'Ada Lovelace'
+  ]
 
-    for(var i = 0; i < questions.length; i++){ // looped through each question
-        questContainer[i].innerHTML = questions[i]
-     var appending = document.createElement('input')// created an input to put in the text
-        questContainer[i].appendChild(appending)//appended the input
-        var answer = document.createElement('button')
-        answer.setAttribute('class','button') // created a class of button
-        questContainer[i].appendChild(answer)
-     
+  for (var i = 0; i < questions.length; i++) { // looped through each question
+    questContainer[i].innerHTML = questions[i]
+    var appending = document.createElement('input')// created an input to put in the text
+    questContainer[i].appendChild(appending)// appended the input
+    var answer = document.createElement('button')
+    answer.setAttribute('class', 'button') // created a class of button
+    questContainer[i].appendChild(answer)
+  }
+
+  var input = document.getElementsByTagName('input')
+
+  function checkAnswers1 () {
+    if (input[0].value === answers[0]) { // had to change from answers[0] to input.value
+      score++                       // because it wasnt registering.
+      alert('YAY CORRECT')
+    } else {
+      alert('Wrong! Try Again!')
     }
+  }
 
-    var input = document.getElementsByTagName('input')
-
-function checkAnswers1() {
-    if(input[0].value === answers[0]){ //had to change from answers[0] to input.value
-        score ++                       // because it wasnt registering. 
-        alert('YAY CORRECT')
-    } 
-    else{
-        alert('Wrong! Try Again!')
-    }  
-}
-
-function checkAnswers2(){
-    if(input[1].value === answers[1]){
-        score++
-        alert('YAY Correct Again')
+  function checkAnswers2 () {
+    if (input[1].value === answers[1]) {
+      score++
+      alert('YAY Correct Again')
+    } else {
+      alert('Wrong! Try Again!')
     }
-    else{
-        alert('Wrong! Try Again!')
-    }    
-}
+  }
 
-function checkAnswers3(){
-    if(input[2].value === answers[2]){
-        score++
-        alert('Great Keep it Going')
+  function checkAnswers3 () {
+    if (input[2].value === answers[2]) {
+      score++
+      alert('Great Keep it Going')
+    } else { // correct way
+      alert('Wrong! Try Again!')
     }
-    else{ // correct way
-        alert('Wrong! Try Again!')
-    }  
-}
+  }
 
-function checkAnswers4() {
-    if(input[3].value === answers[3]){
-        score++
-        alert('Great one more question')
+  function checkAnswers4 () {
+    if (input[3].value === answers[3]) {
+      score++
+      alert('Great one more question')
+    } else {
+      alert('Wrong! Try Again!')
     }
-    else{
-        alert('Wrong! Try Again!')
-    }  
-}
+  }
 
-function checkAnswers5() {
-    if(input[4].value === answers[4]){
-        score++
-        alert('Great Correct')
+  function checkAnswers5 () {
+    if (input[4].value === answers[4]) {
+      score++
+      alert('Great Correct')
+    } else {
+      alert('Wrong! Try Again!')
     }
-    else{
-        alert('Wrong! Try Again!')
-    }  
+  }
+
+  var enterButtons = document.querySelectorAll('.button')
+
+  enterButtons[0].addEventListener('click', checkAnswers1) // I did not practice DRY here
+  enterButtons[1].addEventListener('click', checkAnswers2) // Sorry
+  enterButtons[2].addEventListener('click', checkAnswers3)
+  enterButtons[3].addEventListener('click', checkAnswers4)
+  enterButtons[4].addEventListener('click', checkAnswers5)
 }
 
-var enterButtons = document.querySelectorAll('.button')
-
-enterButtons[0].addEventListener('click', checkAnswers1) // I did not practice DRY here 
-enterButtons[1].addEventListener('click', checkAnswers2) //Sorry
-enterButtons[2].addEventListener('click', checkAnswers3)
-enterButtons[3].addEventListener('click', checkAnswers4)
-enterButtons[4].addEventListener('click', checkAnswers5)
-   
-}
-    
-
-//command backslash
-// 
+// command backslash
+//
 
 // var score = 0
 // alert('Welcome to the Knowledge Trivia')
@@ -106,8 +95,8 @@ enterButtons[4].addEventListener('click', checkAnswers5)
 // // var q1 = 'Who was the first president of the United States?'
 // // step 2: select the element from step 1
 //     // use document.getElementById like you did above
-// // step 3: put the text for the question in the element 
-// // using .innerHTML = q1 or q2 or whatever var is storing your question  
+// // step 3: put the text for the question in the element
+// // using .innerHTML = q1 or q2 or whatever var is storing your question
 // if (q1 === 'George Washington') {
 //     score++
 //     alert('You are correct. Your score is ' + score)
@@ -160,14 +149,9 @@ enterButtons[4].addEventListener('click', checkAnswers5)
 //     alert('Try again to try and get a perfect score!')
 // }
 
-
-
 // /*referenced from a youtube video https://www.youtube.com/watch?v=bfS5-TEoa84*/
 
-
-
-
-//     /*  <section class="quiz"> 
+//     /*  <section class="quiz">
 //         <h3>Who was the first president of the United States</h3>
 //             <ul class = 'q1'>
 //                 <li><input type="radio" name="people" value="George Lopez" class = 'gl'>George Lopez</li>
