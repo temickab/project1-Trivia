@@ -1,5 +1,9 @@
 body{
   background: url(otherchalk.jpg) no-repeat center center fixed; 
+  -webkit-backgound-size: cover;
+  -moz-backgrund-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: 'Bitter', serif;
   /* photo from pixabay*/
 }
@@ -7,9 +11,9 @@ body{
 
 header{
   text-align: center;
-  color: rgb(228, 119, 139);
+  color: #fff;
   margin-top: 100px;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 h1{
@@ -18,7 +22,7 @@ h1{
 
 .button{
   color: black;
-  background-color: rgb(228, 119, 139);
+  background-color: #fff;
   font-size: 20px;
   height: 30px;
   width: 50px;
@@ -28,21 +32,22 @@ h1{
 
 input{
   padding-left: 100px;
+  width: 10px;
 
 }
 
 .ques{
-  color: rgb(228, 119, 139);
+  color: #fff;
   text-align: center;
   padding-bottom: 40px;
-  font-size: 30px;
+  font-size: 15px;
   
 }
 
 
 #start{
   color: black;
-  background-color: rgb(228, 119, 139);
+  background-color: #fff;
   font-size: 20px;
   height: 30px;
   width: 150px;
